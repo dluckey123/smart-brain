@@ -96,7 +96,7 @@ this.setState({box: box});
     .then(response => response.json())  
   .then(response => {
     if (response) {
-      fetch('https://murmuring-hollows-39200.herokuapp.com/:3000/image', {
+      fetch('https://murmuring-hollows-39200.herokuapp.com:3000/image', {
         method: 'put',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
